@@ -1,0 +1,21 @@
+<div ba-panel="" ba-panel-title="User Create" ba-panel-class="with-scroll">
+    <div class="panel-body">
+        <form name="form" class="_users_create">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="">Product Name</label>
+                        <input type="text" name="name" class="form-control" ng-model="product.name" ng-change="handleChange('name', product.name)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="">Product Code</label>
+                        <input type="text" name="code" class="form-control" ng-model="product.code" ng-change="handleChange('code', product.code)">
+                    </div>
+                </div>
+            </div>
+            <button ng-disabled="form.$invalid" type="button" class="btn btn-primary" ng-click="save()">Save</button>
+        </form>
+    </div>
+</div>
